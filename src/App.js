@@ -7,7 +7,7 @@ function App() {
         <h1 className=" bg-red-500"> Olá ! </h1>
       </header>
     </div>
-  )
-}
+  );
+};
 
 export default App

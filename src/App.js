@@ -5,9 +5,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1 className=" bg-red-500"> Olá ! </h1>
-        </header>
-      </div>
+      </header>
+    </div>
   )
 }
 
-export default App;
+export default App

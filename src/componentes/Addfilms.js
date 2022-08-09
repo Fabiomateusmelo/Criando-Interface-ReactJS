@@ -1,10 +1,10 @@
-import { BiCalendarPlus } from "react-icons/bi";
+import { GiFilmSpool } from "react-icons/gi";
 
 const Addfilms = () => {
   return (
     <div>
       <button className="bg-blue-400 text-white px-2 py-3 w-full text-left rounded-t-md">
-        <div><BiCalendarPlus className="inline-block align-text-top" />  Add Appointment</div>
+        <div><GiFilmSpool className="inline-block" />  Add Film</div>
       </button>
       <div className="border-r-2 border-b-2 border-l-2 border-light-blue-500 rounded-b-md pl-4 pr-4 pb-4">
         <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start  sm:pt-5">
@@ -13,7 +13,7 @@ const Addfilms = () => {
           </label>
           <div className="mt-1 sm:mt-0 sm:col-span-2">
             <input type="text" name="ownerName" id="ownerName"
-              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
+              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0"/>
           </div>
         </div>
 
@@ -23,7 +23,7 @@ const Addfilms = () => {
           </label>
           <div className="mt-1 sm:mt-0 sm:col-span-2">
             <input type="text" name="petName" id="petName"
-              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
+              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0" />
           </div>
         </div>
 
@@ -33,7 +33,7 @@ const Addfilms = () => {
           </label>
           <div className="mt-1 sm:mt-0 sm:col-span-2">
             <input type="date" name="aptDate" id="aptDate"
-              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
+              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0" />
           </div>
         </div>
 
@@ -43,7 +43,7 @@ const Addfilms = () => {
           </label>
           <div className="mt-1 sm:mt-0 sm:col-span-2">
             <input type="time" name="aptTime" id="aptTime"
-              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-md" />
+              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0" />
           </div>
         </div>
 
@@ -53,14 +53,14 @@ const Addfilms = () => {
           </label>
           <div className="mt-1 sm:mt-0 sm:col-span-2">
             <textarea id="aptNotes" name="aptNotes" rows="3"
-              className="shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md" placeholder="Detailed comments about the condition"></textarea>
+              className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0"></textarea>
           </div>
         </div>
 
 
         <div className="pt-5">
           <div className="flex justify-end">
-            <button type="submit" className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-blue-400 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
+            <button type="submit" className="ml-3 inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-sm text-white bg-blue-400 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400">
               Submit
             </button>
           </div>
@@ -70,4 +70,4 @@ const Addfilms = () => {
   )
 }
 
-export default AddAppointment
+export default Addfilms

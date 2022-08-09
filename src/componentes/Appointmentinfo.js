@@ -14,7 +14,7 @@ const AppointmentInfo = ({ appointment }) => {
           <span className="flex-none font-medium text-2xl text-blue-500">
             {appointment.petName}
           </span>
-          <span className="flex-grow text-right">{appointment.aptDate}</span>
+          <span className="flex-grow text-right text-gray-300">{appointment.aptDate}</span>
         </div>
         <div>
           <b className="font-bold text-blue-500">Owner:</b>

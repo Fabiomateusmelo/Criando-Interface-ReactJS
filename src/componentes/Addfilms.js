@@ -9,7 +9,7 @@ const Addfilms = () => {
       className={`bg-blue-400 text-white px-3 py-2 w-full text-left rounded-t-md
       ${toggleForm ? 'rounded-t-md' : 'rounded-md'}`}>
         <div>
-          <GiFilmSpool className="inline-block" /> Add Film
+          <GiFilmSpool className="inline-block" /> Adicionar Filme
         </div>
       </button>
       {toggleForm && (

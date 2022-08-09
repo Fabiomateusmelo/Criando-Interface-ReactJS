@@ -6,7 +6,7 @@ const Addfilms = () => {
   return (
     <div>
       <button onClick={() => { setToggleForm(!toggleForm) }}
-      className={`bg-blue-400 text-white px-3 py-2 w-full text-left rounded-t-md
+      className={`bg-blue-400 hover:bg-blue-600 text-white px-3 py-2 w-full text-left rounded-t-md
       ${toggleForm ? 'rounded-t-md' : 'rounded-md'}`}>
         <div>
           <GiFilmSpool className="inline-block" /> Adicionar Filme

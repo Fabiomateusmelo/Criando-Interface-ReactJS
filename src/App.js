@@ -45,7 +45,13 @@ function App() {
         <GiFilmSpool className="inline-block text-blue-500" />
       </h1>
       <Addfilms />
-      <Search query={query} onQueryChange={myQuery => setQuery(myQuery)} />
+      <Search query={query} 
+      onQueryChange={myQuery => setQuery(myQuery)} 
+      orderBy={orderBy}
+      onOrderByChange = {mySort => setOrderBy(mySort)}
+      sortBy = {sortBy}
+      onSortByChange = {mySort => setSortBy(mySort)}
+      />
 
       <ul className="divide-y divide-gray-200">
         {filterAppointments.map(appointment => (

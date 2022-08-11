@@ -29,7 +29,7 @@ const DropDown = ({toggle}) => {
   )
 }
 
-const Search = () => {
+const Search = ({query, onQueryChange}) => {
   let [toggleSort, setToggleSort] = useState(false)
   return (
     <div className="py-5">
@@ -42,7 +42,8 @@ const Search = () => {
           type="text"
           name="query"
           id="query"
-          value=""
+          value={query}
+          onChange={(event) => {onQueryChange(event.target.value)}}
           className=" px-8 py-2.5 focus:ring-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-0 focus:border-indigo-500 block w-full sm:text-sm border-gray-300"
           placeholder="Buscar"
         />

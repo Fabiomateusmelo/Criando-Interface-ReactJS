@@ -1,7 +1,8 @@
 import { GiFilmSpool } from 'react-icons/gi'
 import { useState } from 'react'
 
-const Addfilms = ({ onSendAppointment, lastId }) => {
+const Addfilms = ( {onSendAppointment, lastId}) => {
+
   const clearData = {
     ownerName: '',
     petName: '',
@@ -27,13 +28,9 @@ const Addfilms = ({ onSendAppointment, lastId }) => {
 
   return (
     <div>
-      <button
-        onClick={() => {
-          setToggleForm(!toggleForm)
-        }}
-        className={`bg-blue-400 hover:bg-blue-600 text-white px-3 py-2 w-full text-left rounded-t-md
-      ${toggleForm ? 'rounded-t-md' : 'rounded-md'}`}
-      >
+      <button onClick={() => { setToggleForm(!toggleForm) }}
+      className={`bg-blue-400 hover:bg-blue-600 text-white px-3 py-2 w-full text-left rounded-t-md
+      ${toggleForm ? 'rounded-t-md' : 'rounded-md'}`}>
         <div>
           <GiFilmSpool className="inline-block" /> Adicionar Filme
         </div>
@@ -52,9 +49,7 @@ const Addfilms = ({ onSendAppointment, lastId }) => {
                 type="text"
                 name="ownerName"
                 id="ownerName"
-                onChange={event => {
-                  setFormData({ ...formData, ownerName: event.target.value })
-                }}
+                onChange={(event) => {setFormData({...formData, ownerName: event.target.value})}}
                 value={formData.ownerName}
                 className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0"
               />
@@ -73,9 +68,7 @@ const Addfilms = ({ onSendAppointment, lastId }) => {
                 type="text"
                 name="petName"
                 id="petName"
-                onChange={event => {
-                  setFormData({ ...formData, petName: event.target.value })
-                }}
+                onChange={(event) => {setFormData({...formData, petName: event.target.value})}}
                 value={formData.petName}
                 className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0"
               />
@@ -94,9 +87,7 @@ const Addfilms = ({ onSendAppointment, lastId }) => {
                 type="date"
                 name="aptDate"
                 id="aptDate"
-                onChange={event => {
-                  setFormData({ ...formData, aptDate: event.target.value })
-                }}
+                onChange={(event) => {setFormData({...formData, aptDate: event.target.value})}}
                 value={formData.aptDate}
                 className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0"
               />
@@ -115,9 +106,7 @@ const Addfilms = ({ onSendAppointment, lastId }) => {
                 type="time"
                 name="aptTime"
                 id="aptTime"
-                onChange={event => {
-                  setFormData({ ...formData, aptTime: event.target.value })
-                }}
+                onChange={(event) => {setFormData({...formData, aptTime: event.target.value})}}
                 value={formData.aptTime}
                 className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0"
               />
@@ -136,9 +125,7 @@ const Addfilms = ({ onSendAppointment, lastId }) => {
                 id="aptNotes"
                 name="aptNotes"
                 rows="3"
-                onChange={event => {
-                  setFormData({ ...formData, aptNotes: event.target.value })
-                }}
+                onChange={(event) => {setFormData({...formData, aptNotes: event.target.value})}}
                 value={formData.aptNotes}
                 className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border-gray-300 rounded-sm px-1 focus:outline-none focus:ring-2 focus:ring-offset-0"
               ></textarea>

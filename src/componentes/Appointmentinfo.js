@@ -20,7 +20,7 @@ const AppointmentInfo = ({ appointment, onDeleteAppointment }) => {
           </span>
         </div>
         <div>
-          <b className="font-bold text-blue-500">Owner:</b>
+          <b className="font-bold text-blue-500">Título:</b>
           <b className="text-gray-200"> {appointment.ownerName}</b>
         </div>
         <div className="leading-tight text-gray-300">

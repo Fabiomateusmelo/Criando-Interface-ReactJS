@@ -44,13 +44,22 @@ function App() {
         FilmsG
         <GiFilmSpool className="inline-block text-blue-500" />
       </h1>
-      <Addfilms />
-      <Search query={query} 
-      onQueryChange={myQuery => setQuery(myQuery)} 
-      orderBy={orderBy}
-      onOrderByChange = {mySort => setOrderBy(mySort)}
-      sortBy = {sortBy}
-      onSortByChange = {mySort => setSortBy(mySort)}
+      <Addfilms
+        onSendAppointment={myAppointment =>
+          setAppointmentList([...appointmentList, myAppointment])
+        }
+        lastId={appointmentList.reduce(
+          (max, item) => (Number(item.id) > max ? Number(item.id) : max),
+          0
+        )}
+      />
+      <Search
+        query={query}
+        onQueryChange={myQuery => setQuery(myQuery)}
+        orderBy={orderBy}
+        onOrderByChange={mySort => setOrderBy(mySort)}
+        sortBy={sortBy}
+        onSortByChange={mySort => setSortBy(mySort)}
       />
 
       <ul className="divide-y divide-gray-200">
